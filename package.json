@@ -1,0 +1,30 @@
+{
+  "name": "prettier-plugin-html-no-eq-empty",
+  "version": "0.0.1",
+  "description": "A prettier plugin to remove `=\"\"` from HTML attributes",
+  "type": "module",
+  "module": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxxov/prettier-plugin-no-eq-empty.git"
+  },
+  "keywords": [
+    "prettier",
+    "plugin",
+    "html",
+    "attribute",
+    "empty",
+    "string",
+    "blank"
+  ],
+  "author": "sxxov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sxxov/prettier-plugin-no-eq-empty/issues"
+  },
+  "homepage": "https://github.com/sxxov/prettier-plugin-no-eq-empty#readme",
+  "peerDependencies": {
+    "prettier": "^3"
+  }
+}
