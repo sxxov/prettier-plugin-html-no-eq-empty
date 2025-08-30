@@ -1,7 +1,20 @@
-import { printers as prettierPrinters } from 'prettier/plugins/html';
-/** @import {Printer} from 'prettier' */
+import htmlPlugin from 'prettier/plugins/html';
+/** @import {Printer, SupportLanguage} from 'prettier' */
 
-export { languages, options, parsers } from 'prettier/plugins/html';
+const {
+	printers: prettierPrinters,
+	languages,
+	options,
+	parsers,
+} = /**
+ * @type {{
+ * 	printers: { html: Printer };
+ * 	languages: SupportLanguage[];
+ * 	options: Record<string, unknown>;
+ * } & typeof htmlPlugin}
+ */ (htmlPlugin);
+
+export { languages, options, parsers };
 
 export const printers = Object.fromEntries(
 	Object.entries(prettierPrinters).map(([key, printer]) => [
